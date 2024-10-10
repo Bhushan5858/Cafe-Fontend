@@ -58,7 +58,7 @@ const SignUp = () => {
     console.log('SignUp Form Submitted:', signupformdata);
 
     try {
-      const response = await fetch('http://localhost:5000/User/SignUp', {
+      const response = await fetch('https://cafe-backend-ywnx.onrender.com/User/SignUp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

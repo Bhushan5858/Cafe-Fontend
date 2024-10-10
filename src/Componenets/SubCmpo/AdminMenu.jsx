@@ -29,7 +29,7 @@ const AdminMenu = () => {
         console.log('Search Form Submitted:', searchformdata);
 
         try {
-            const response = await fetch('http://localhost:5000/Admin/Menusearch', {
+            const response = await fetch('https://cafe-backend-ywnx.onrender.com/Admin/Menusearch', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ const AdminMenu = () => {
         formData.append('image', addformdata.image); // Send the file directly
 
         try {
-            const response = await fetch('http://localhost:5000/Admin/MenuAdd', {
+            const response = await fetch('https://cafe-backend-ywnx.onrender.com/Admin/MenuAdd', {
                 method: 'POST',
                 body: formData,
             });
@@ -156,7 +156,7 @@ const AdminMenu = () => {
         console.log(updateformdata.image);
 
         try {
-            const response = await fetch('http://localhost:5000/Admin/MenuUpdate', {
+            const response = await fetch('https://cafe-backend-ywnx.onrender.com/Admin/MenuUpdate', {
                 method: 'PUT',
                 body: formData,
             });
@@ -213,7 +213,7 @@ const AdminMenu = () => {
         console.log('Delete Form Data Submitted:', deleteformdata);
 
         try {
-            const response = await fetch('http://localhost:5000/Admin/MenuDelete', {
+            const response = await fetch('https://cafe-backend-ywnx.onrender.com/Admin/MenuDelete', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -295,7 +295,7 @@ const AdminMenu = () => {
                                             <h3>Name: {searchResult.name}</h3>
                                             <h3>Price: ${searchResult.price}</h3>
                                             {searchResult.image && (
-                                                <img src={`http://localhost:5000/uploads/${searchResult.image}`} alt={searchResult.name} height="40%" width="100%" />
+                                                <img src={`https://cafe-backend-ywnx.onrender.com/uploads/${searchResult.image}`} alt={searchResult.name} height="40%" width="100%" />
                                             )}
                                         </>
                                     ) : (

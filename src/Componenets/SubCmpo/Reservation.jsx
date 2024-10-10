@@ -45,7 +45,7 @@ const Reservation = () => {
     console.log('Reservation Form Submitted:', reservationformdata);
 
     try {
-      const response = await fetch('http://localhost:5000/User/UserReservation', {
+      const response = await fetch('https://cafe-backend-ywnx.onrender.com/User/UserReservation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reservationformdata),

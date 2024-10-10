@@ -16,7 +16,7 @@ const UserReservation = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/User/UserReservation', {
+        const response = await fetch('https://cafe-backend-ywnx.onrender.com/User/UserReservation', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

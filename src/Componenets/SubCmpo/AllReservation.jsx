@@ -28,7 +28,7 @@ const AllReservation = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/Admin/AdminReservation', {
+            const response = await fetch('https://cafe-backend-ywnx.onrender.com/Admin/AdminReservation', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const AllReservation = () => {
             console.log(ob);
 
             try {
-                const doneresponse = await fetch('http://localhost:5000/Admin/AdminDoneRes', {
+                const doneresponse = await fetch('https://cafe-backend-ywnx.onrender.com/Admin/AdminDoneRes', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

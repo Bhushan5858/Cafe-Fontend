@@ -7,7 +7,7 @@ const OurSpecial = () => {
     useEffect(() => {
         const fetchMenu = async () => {
             try {
-                const response = await fetch('http://localhost:5000/User/ShowMenu');
+                const response = await fetch('https://cafe-backend-ywnx.onrender.com/User/ShowMenu');
                 const data = await response.json();
                 console.log('Fetched menu data:', data); // Log the fetched data
                 
@@ -29,7 +29,7 @@ const OurSpecial = () => {
                     {menuItems.length > 0 ? (
                         menuItems.map((item, index) => (
                             <div className='cards' key={index}>
-                                <img src={`http://localhost:5000/uploads/${item.image}`} alt={item.name} />
+                                <img src={`https://cafe-backend-ywnx.onrender.com/uploads/${item.image}`} alt={item.name} />
                                 <p className='Name'>{item.name}</p>
                                 <p className='price'>${item.price}</p>
                             </div>

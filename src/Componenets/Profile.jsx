@@ -28,7 +28,7 @@ const Profile = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/User/Profile', {
+        const response = await fetch('https://cafe-backend-ywnx.onrender.com/User/Profile', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ const Profile = () => {
           <a href="https://www.instagram.com" className="icon"><FaInstagram /></a>
           <a href="https://www.google.com" className="icon"><FaGoogle /></a>
           
-          {userData && userData.role === "ADMIN" && (
+          {userData && userData.role === "Admin" && (
             <FaUserTie className="icon log-out" onClick={() => navigate('/AllReservation')} />
           )}
 
