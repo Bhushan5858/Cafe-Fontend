@@ -1,0 +1,101 @@
+/* navbar.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(37, 37, 37);
+  padding: 10px 22.5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 65px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logo img{
+border-radius: 50%;
+height: 50px;
+width: 50px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 5px;
+  width :70%;
+  height: 100%;
+}
+.prof-btn{
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  background-color: wheat;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  
+}
+
+.nav-items a {
+  margin: 0 20px;
+  font-size: 23px;
+  cursor: pointer;
+  font-weight: 550;
+  font-family: 'Playfair Display', serif;
+  color: #e0e0e0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none; /* Hide menu items by default */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    top: 65px;
+    left: 0;
+  }
+
+  .menu-button {
+    display: block; /* Show menu button */
+  }
+
+  .nav-items.show {
+    display: flex; /* Show menu items when active */
+  }
+}

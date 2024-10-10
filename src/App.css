@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.con{
+  height: 200px;
+  width: 200px;
+margin: 10px;
+padding: 80px 20px;
+
+}
+.con h1{
+  font-size: 20px;
+}
+.con1{
+  background-color: lightcoral;
+}
+.con2{
+  background-color: lightgoldenrodyellow;
+}
+.con3{
+  background-color: lightsteelblue;
+}
+.con4{
+  background-color: rgb(226, 226, 15);
+}
+
+
+

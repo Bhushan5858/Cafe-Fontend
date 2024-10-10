@@ -1,0 +1,107 @@
+.aboutus-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./../../../Assets/about2.avif') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    height: 100vh;
+    width: 95vw;
+    color: #ffffff;
+    margin: 0 auto;
+    border: 5px dotted wheat;
+    border-radius: 50px;
+    margin-top: 50px;
+  }
+  
+  .aboutus-text {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .aboutus-text .heroh1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-text .herop {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .about-icons {
+    margin: 20px 0;
+  }
+  
+  .about-icons a {
+    border: 1px solid rgb(47, 32, 21);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    color: black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: beige;
+  }
+  
+  .about-icons a:hover {
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px black;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 768px) and (max-width:1023px) {
+    .aboutus-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .aboutus-text {
+      max-width: 50%;
+      margin-left: 50px;
+      text-align: center;
+      margin: 100px auto 0 auto;
+    }
+  
+    .aboutus-text .heroh1 {
+      font-size: 48px;
+    }
+  
+    .aboutus-text .herop {
+      font-size: 20px;
+    }
+  
+    .about-icons a {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+
+    .aboutus-text{
+        min-width: 90%;
+    }
+    .aboutus-text .heroh1 {
+      font-size: 28px;
+    }
+  
+    .aboutus-text .herop {
+      font-size: 14px;
+    }
+  
+    .about-icons a {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ourspecial-section {
+  height: auto; /* Full viewport height */
+  width: auto; /* Full viewport width */
+  background-color: rgb(37, 37, 37); /* Dark background */
+  display: flex;
+  flex-direction: column;
+  background: url(./../../../Assets/menu.avif)no-repeat center center;
+  background-size: cover;
+  width: 95vw;
+margin: 0 auto;
+border: 5px dotted wheat;  
+border-radius: 30px;
+margin-top: 50px;
+
+}
+
+.ourspecial-con {
+  height: auto;
+  width: 100%;
+  border-radius: 50px;
+  color: wheat;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  
+}
+
+.ourspecial-con h1 {
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 15px rgb(37, 37, 37);
+  margin-bottom: 20px;
+  border-top: 1px solid rgb(37, 37, 37);
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: wheat;
+}
+.ourspecial-con h1:hover{
+  font-size: 35px;
+  transition: 1s;
+}
+
+.special-items {
+  height: 300px; /* Fixed height to show two rows */
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to show only two rows */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical overflow */
+  margin-bottom: 30px;
+}
+
+.cards {
+  height: 250px; /* Set height for cards */
+  min-width:200px; /* Set width for cards */
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between items */
+  align-items: center;
+  margin-right: 30px; /* Space between cards */
+  margin-bottom: 0; /* No space below cards for two rows */
+  box-shadow: 5px 5px 5px wheat;
+  border: 3px solid wheat;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  position: relative; /* For pseudo-element positioning */
+}
+
+/* Hover effect */
+.cards:hover {
+  transform: scale(1.05); /* Scale the card up */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5), 0 15px 30px rgba(255, 255, 255, 0.3); /* Stronger shadow */
+}
+
+.cards img {
+  height: 60%; /* Adjust height to fit the card */
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+
+.cards .Name {
+  height: 20%; /* Adjust height to fit the card */
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  background-color: wheat;
+  color: black;
+  display: flex; /* Center text vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.cards .price {
+  height: 20%; /* Adjust height to fit the card */
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  background-color: black;
+  color: wheat;
+  display: flex; /* Center text vertically */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 25px 25px;
+}
+
+.menu-item-btn {
+  height: 20%; /* Adjust height to fit the card */
+  width: 100%;
+  font-size: 20px;
+  border-radius: 0 0 30px 30px;
+  font-family: 'Playfair Display', serif;
+  background-color: wheat;
+  color: black;
+  font-weight: 600;
+  display: flex; /* Center text vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/* Custom Horizontal Scrollbar Styles */
+.special-items::-webkit-scrollbar {
+  height: 10px; /* Height of the horizontal scrollbar */
+}
+
+.special-items::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Background of the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.special-items::-webkit-scrollbar-thumb {
+  background: wheat; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.special-items::-webkit-scrollbar-thumb:hover {
+  background: #ffcc66; /* Color on hover */
+}
+
+/* Optional: Add a border for a more defined scrollbar */
+.special-items::-webkit-scrollbar-thumb:active {
+  background: #e5a700; /* Color when the scrollbar is active */
+}
+
+

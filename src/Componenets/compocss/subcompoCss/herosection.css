@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    justify-content: center;
+    align-items: center;
+    background: url(./../../../Assets/hero3.avif) no-repeat center center;
+    background-size: cover; /* Cover the entire section */
+    padding: 50px 20px;
+    height: 100vh;
+    width: 100vw;
+    color: #ffffff;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 5px dotted wheat;
+    text-align: center; /* Center text for smaller screens */
+}
+
+.hero-text {
+    max-width: 50%; /* Adjust width for smaller screens */
+    margin: 0 auto;
+}
+
+.hero-text .heroh1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* Adjust font size for smaller screens */
+    margin-bottom: 20px;
+}
+
+.hero-text .herop {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 30px;
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 0 auto;
+}
+
+.hero-image img {
+    margin-top: 20px;
+    max-width: 300px; /* Adjust size for smaller screens */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.3);
+    transition: box-shadow 1.5s ease-in-out;
+}
+
+.reservation-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    color: black;
+    background-color: rgb(201, 168, 127);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.reservation-button:hover {
+    scale: 1.1;
+    background-color: rgb(47, 32, 21);
+    color: wheat;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) and (max-width:949){
+    .hero-section {
+        flex-direction: row; /* Align items horizontally on larger screens */
+        text-align: left; /* Align text to the left */
+    }
+
+    .hero-text {
+        max-width: 90%; /* Adjust width for larger screens */
+    }
+
+    .hero-text .heroh1 {
+        font-size: 48px; /* Larger font size for larger screens */
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .hero-text .herop {
+        font-size: 18px; /* Larger font size for larger screens */
+        width: 60%; /* Adjust width for larger screens */
+        text-align: center;
+        min-width: 70%;
+        margin-left: 0 auto;
+    }
+    .reservation-button {
+        margin-top: 20px;
+        margin-left: 35%;
+    }
+
+    .hero-image img {
+        max-width: 500px; /* Larger image size for larger screens */
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+
+.hero-text{
+min-width: 100%;
+}
+    .hero-text .heroh1 {
+        font-size: 30px; /* Smaller font size for very small screens */
+    }
+
+    .hero-text .herop {
+        font-size: 16px; /* Smaller font size for very small screens */
+        width: 90%; /* Adjust width for very small screens */
+    }
+
+    .reservation-button {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+}

@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.signup-con {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.signup-con .con {
+    height: 80%;
+    width: 70%;
+    max-width: 1200px; /* Limit max width for larger screens */
+    border-radius: 30px;
+    border: 5px dotted wheat;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.signup-con .con .form-con {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(47, 32, 21);
+}
+
+.signup-con .con .form-con form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    text-align: center;
+    color: wheat;
+}
+
+.signup-con .con .form-con form .input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.signup-con .con .form-con form .input input {
+    background-color: wheat;
+    color: rgb(37, 37, 37);
+    border: 3px double #d0d9e0;
+    margin: 8px 0;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 25px;
+    width: 100%;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signup-con .con .form-con form .btn {
+    background-color: rgb(47, 32, 21);
+    color: wheat;
+    box-shadow: 0 0 10px wheat;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 30%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+}
+
+.signup-con .con .form-con form .btn:hover {
+    transition: 0.5s;
+    background-color: wheat;
+    color: rgb(47, 32, 21);
+    border: 2px solid rgb(47, 32, 21);
+}
+
+.signup-icons {
+    margin: 20px 0;
+}
+
+.signup-icons a {
+    border: 1px solid rgb(47, 32, 21);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    color: wheat;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: rgb(47, 32, 21);
+    box-shadow: 0 0 10px wheat;
+}
+
+.signup-icons a:hover {
+    color: rgb(47, 32, 21);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px wheat;
+    background-color: wheat;
+}
+
+.signup-con .con .svg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.signup-con .con .svg p {
+    color: wheat;
+    margin-top: 20px;
+}
+
+.signup-con .con .svg .btn {
+    background-color: wheat;
+    color: rgb(47, 32, 21);
+    box-shadow: 0 0 10px wheat;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 35%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: 'Playfair Display', serif;
+    margin: 10px auto 0 auto;
+}
+
+.signup-con .con .svg .btn:hover {
+    transition: 0.5s;
+    background-color: rgb(47, 32, 21);
+    color: wheat;
+    border: 2px solid rgb(47, 32, 21);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .signup-con .con {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    
+    .signup-con .con .form-con{
+        min-height: 75%;
+    }
+
+    .signup-con .con .svg{
+        min-height: 25%;
+    }
+
+    .signup-con .con .svg .btn{
+        margin-top: 20px;
+        width: 20%;
+    }
+
+    .signup-con .con .form-con,
+    .signup-con .con .svg {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .signup-con .con .form-con form .btn {
+        width: 20%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .signup-con .con{
+        height: 80%;
+    }
+
+    .signup-con .con .form-con{
+        min-height: 75%;
+    }
+
+    .signup-con .con .svg{
+        min-height: 25%;
+    }
+
+    .signup-con .con .svg p{
+        margin-bottom: 10px;
+    }
+
+
+    .signup-con .con .form-con form .btn,
+    .signup-con .con .svg .btn {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .visible{
+        display: none;
+    }
+
+    .signup-icons a {
+        width: 40px;
+        height: 40px;
+    }
+}

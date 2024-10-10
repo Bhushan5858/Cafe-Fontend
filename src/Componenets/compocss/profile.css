@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-con{
+    height: 90vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./../../Assets/hero3.avif') no-repeat center center;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 0 auto;
+    border: 5px dotted wheat;
+    margin-top: 3%;
+
+}
+
+.profile-con .con{
+    height: 80%;
+    width: 30%;
+    background-color: rgb(37, 37, 37);
+    border-radius: 30px;
+    box-shadow:20px 20px 20px black;
+    border: 5px double wheat;
+}
+
+
+.profile-con .con .svg{
+    height: 30%;
+    width: 100%;
+    border-radius: 30px 30px 0 0 ;
+    margin-bottom: 20px;
+}
+
+.profile-con .con .info{
+    height: 15%;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: wheat;
+}
+
+.profile-con .con .btns{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-con .con .btns .btn{
+    font-size: 15px;
+    padding: 9px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: wheat;
+    margin: 10px;
+}
+
+.profile-con .con .btns .btn:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    background-color:rgb(126, 84, 68) ;
+    color: wheat;
+    box-shadow: 0 5px 5px wheat;
+}
+
+.profile-con .con .icons{
+    height: 15%;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.profile-con .con .icons a {
+    border: 1px solid rgb(47, 32, 21); /* Blue border */
+    border-radius: 50%; /* Circle icons */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    color: black; /* Icon color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth color transition */
+    background-color: wheat;
+}
+.profile-con .con .icons a:hover {
+    scale: 1.1;
+    transition: 0.5s;
+    background-color:rgb(126, 84, 68) ;
+    color: wheat;
+    transition: 0.5s;
+    box-shadow: 0 5px 5px wheat;
+}
+
+.profile-con .con .icons .log-out {
+    border: 1px solid rgb(47, 32, 21); /* Blue border */
+    border-radius: 30%; /* Circle icons */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    color: black; /* Icon color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth color transition */
+    background-color: wheat;
+}
+
+.profile-con .con .icons .log-out:hover {
+    scale: 1.1;
+    transition: 0.5s;
+    background-color:rgb(126, 84, 68) ;
+    color: wheat;
+    transition: 0.5s;
+    box-shadow: 0 5px 5px wheat;
+}
+
+.profile-con .con .note{
+height: 15%;
+width: 100%;
+border-radius: 0 0 30px 30px;
+padding: 10px;
+border-top: 2px dotted wheat;
+}
+
+.profile-con .con .note p{
+
+color: wheat;
+text-align: center;
+font-size: 20px;
+font-weight: 600;
+font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+.contactus-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./../../../Assets/contactus.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    height: 80vh;
+    width: 95vw;
+    margin: 0 auto;
+    border: 5px dotted wheat;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+}
+
+.contactus-text {
+    width: 90%; /* Full width on smaller screens */
+    max-width: 600px; /* Limit max width on larger screens */
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color: wheat;
+    background-color: black;
+    border: 5px dotted wheat;
+    padding: 20px;
+}
+
+.contactus-text .heroh1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; /* Smaller font size for better responsiveness */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactus-text form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements */
+}
+
+.contactus-text form input {
+    color: rgb(47, 32, 21);
+    border: 3px double #d0d9e0;
+    margin: 8px 0;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 25px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 400px; /* Limit max width on larger screens */
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: wheat;
+}
+
+.contactus-text form button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: wheat;
+}
+
+.contactus-text form button:hover {
+    scale: 1.1;
+    transition: 0.5s;
+    background-color: rgb(126, 84, 68);
+    color: wheat;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .contactus-section {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px;
+    }
+
+    .contactus-text .heroh1 {
+        font-size: 28px; /* Smaller font size for tablets */
+    }
+
+    .contactus-text form input {
+        font-size: 12px; /* Smaller font size for inputs */
+    }
+
+    .contactus-text form button {
+        width: 120px; /* Smaller button width */
+        font-size: 18px; /* Smaller font size for button */
+    }
+}
+
+@media (max-width: 480px) {
+    .contactus-text .heroh1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .contactus-text form input {
+        font-size: 10px; /* Smaller font size for inputs */
+    }
+
+    .contactus-text form button {
+        width: 100px; /* Smaller button width */
+        font-size: 16px; /* Smaller font size for button */
+    }
+}
